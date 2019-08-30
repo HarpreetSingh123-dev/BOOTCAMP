@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+
+.text-align{
+
+text-align: center;
+
+}    
+
+.burger-placement{
+display: flex;
+justify-content: center;
+
+}
+
+.bread-top{
+
+width: 600px;
+height: 100px;
+background-color: navajowhite;
+border-radius: 40px;
+position: relative;
+}    
+
+.bread-bottom{
+
+width: 600px;
+height: 100px;
+background-color: navajowhite;
+border-radius: 40px;
+position: relative;
+}
+
+.seeds-top{
+position: absolute;
+width: 20px;
+height: 40px;
+background-color: white;
+border-radius: 80px;
+left: 40px;
+top: 10px;
+
+}
+
+.seeds-bottom{
+position: absolute;
+width: 20px;
+height: 40px;
+background-color: white;
+border-radius: 80px;
+left: 40px;
+top: 10px;
+
+}
+.addBacon{
+
+border: 1px solid black;
+background-color: red;
+width: 600px;
+border-radius: 200px;
+}
+.addSalad{
+
+border: 1px solid black;
+background-color: green;
+width: 600px;
+border-radius: 200px;
+}
+
+/*
+.button-adjustment{
+
+position: relative;
+top: 300px;
+left: 690px;
+border: 2px solid black;
+padding: 20px;
+width: 130px;
+padding-left: 50px;
+padding-right: 50px;
+}*/
+
+.button-section{
+  
+  width: 300px;
+ 
+}
+
+.button-adjustment{
+  border: 2px solid black;
+  background-color: goldenrod;
+  border-radius: 80px;
+}
+
+.buttonSet{
+
+  display: flex;
+  justify-content: center;
+}
+
+.button-page-adjustment{
+  position: relative;
+  top:50px;
+}
+
+</style>
+
+</head>
+<body>
+ <div class="text-align">   
+          <h1>Welcome! Make your own burger</h1>    
+ </div>
+<!--burger section below-->
+<div class="burger-placement">
+      
+       <div>
+      
+               <div class="bread-top"><span class="seeds-top"></span></div>  
+              
+                <div id="bacon"></div>
+                <div id="salad"></div>
+                <div id="chicken"></div>
+                <div id="fish"></div>
+
+               
+                <div class="bread-bottom"><span class="seeds-bottom"></span></div>
+                  <div id="para"></div>
+                  <div id="para2"></div>
+                  <div id="para3"></div>
+                  <div id="para4"></div>
+       </div>
+</div>
+<!--burger section ends-->
+<!---button section below-->
+<div class="button-page-adjustment" id="button">
+<div class="button-section container">
+<div class="button-adjustment">
+          
+           <h5 class="text-align">Bacon</h5>
+           <div class="buttonSet"><button id="addBacon"type="button" class="btn btn-primary" > Add</button> <button id="remBacon"type="button" class="btn btn-secondary">Remove</button> </div>
+          
+           <h5 class="text-align">Salad</h5>
+           <div class="buttonSet"><button id="addSalad"type="button" class="btn btn-primary" > Add</button> <button id="remSalad"type="button" class="btn btn-secondary">Remove</button> </div>
+          
+           <h5 class="text-align">Chicken</h5>
+           <div class="buttonSet"><button id="addChicken"type="button" class="btn btn-primary" > Add</button> <button id="remChicken" type="button" class="btn btn-secondary">Remove</button> </div>
+          
+           <h5 class="text-align" >Fish</h5>
+           <div class="buttonSet"><button id="addFish"type="button" class="btn btn-primary" > Add</button> <button id="remFish"type="button" class="btn btn-secondary" >Remove</button> </div>
+           
+           <h5 class="text-align">Checkout</h5>
+           <div class="buttonSet"><button id="checkout"type="button" class="btn btn-primary" > Checkout </button></div>
+</div>
+</div>
+</div>
+<!--button section ends-->
+<script>
+
+//BACON//
+
+       document.getElementById("addBacon").addEventListener("click", addBacon);  
+       document.getElementById("remBacon").addEventListener("click", removeBacon);    
+
+
+       function addBacon(){
+      
+              document.getElementById("bacon").innerHTML+= "<p class='addBacon'><br/> </p>" 
+             
+              const elems1 = document.getElementById("bacon").querySelectorAll("p");
+
+              if(elems1.length>2){
+
+                document.getElementById("para").innerHTML= '<strong>Now that are some real calories</strong>'
+                }
+              else{
+                  document.getElementById("para").innerHTML= '<strong>You skinny guy , put some real calories in</strong>'
+                  }
+
+              if(elems1.length==5){
+                  window.alert("Idiot you will get fat , add some salad");
+                  }
+                  }
+
+        function removeBacon(){
+          const elems = document.getElementById("bacon").querySelectorAll("p");
+          elems[elems.length-1].remove()
+         
+          if(elems.length==1){
+          document.getElementById("para").innerHTML= '<strong>"ooo! ComeOn! Add something"</strong>'
+               }
+               }
+
+        document.getElementById("remBacon").addEventListener("click", recal);
+             
+             function recal(){
+               const elems2 = document.getElementById("bacon").querySelectorAll("p");
+               c = elems2.length  
+               var k = document.getElementById("para2").innerHTML="Number of Bacons" +"  "+ c;
+              }
+
+        document.getElementById("addBacon").addEventListener("click", calculate)
+                
+             function calculate()   {
+               const elems2 = document.getElementById("bacon").querySelectorAll("p");
+               document.getElementById("para2").innerHTML="Number of Bacons"+" "+ elems2.length;
+                }
+                   
+//SALAD//
+
+
+        document.getElementById("addSalad").addEventListener("click", addSalad);  
+        document.getElementById("remSalad").addEventListener("click", removeSalad);    
+
+
+
+    function addSalad(){
+            document.getElementById("salad").innerHTML+= "<p class='addSalad'><br/> </p>"
+  
+          }
+
+    function removeSalad(){
+             //const elems = document.querySelectorAll("p");
+             const elems = document.getElementById("salad").querySelectorAll("p");
+             elems[elems.length-1].remove()
+             }
+
+
+//checkout
+document.getElementById("checkout").addEventListener("click" , totalPrice)
+
+function totalPrice(){
+
+var Bacons = document.getElementById("bacon").querySelectorAll("p");
+var numberOfBacons = Bacons.length;
+var pricePerSlice = 10;
+var totalBaconsPrice = pricePerSlice*numberOfBacons;
+
+
+var Salad = document.getElementById("salad").querySelectorAll("p");
+var numberOfSalad = Salad.length
+var pricePerSalad = 10;
+var totalSaladPrice = pricePerSalad*numberOfSalad;
+
+var TotalPrice = totalBaconsPrice+totalSaladPrice;
+document.getElementById("para3").innerHTML= " Total Price :"+" "+TotalPrice +"Rs";
+}
+
+document.getElementById("checkout").addEventListener("click" , totalCalories)
+
+function totalCalories(){
+var Bacons = document.getElementById("bacon").querySelectorAll("p");
+var numberOfBacons = Bacons.length;
+var caloriePerSlice= 2;
+var totalBaconCalorie = numberOfBacons*caloriePerSlice;
+document.getElementById("para4").innerHTML= " Total Calories :"+" "+totalBaconCalorie;
+}
+
+document.getElementById("checkout").addEventListener("click" , disappear)
+
+function disappear(){
+
+  document.getElementById("button").innerHTML=""
+}
+
+    </script>
+
+</body>
+</html>
