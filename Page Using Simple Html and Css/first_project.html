@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My_First_Project</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style>
+    /* Navbar styling below*/
+
+    .navbar{
+
+background-color: steelblue;
+
+    }
+ .navbar .nav-link{
+     color: whitesmoke;
+
+ }
+
+ /* Header class styling*/
+
+ .header{
+
+background-color: red;
+height: 500px;
+position: relative;
+background-image: url('../Week2/headerback.jpg');
+
+ }
+.header .container-fluid{
+
+
+   
+     height: 200px;
+     position: absolute;
+     top: 180px;
+ }
+
+ .container-fluid h1,h6,h4{
+     text-align: center;
+    
+ }
+
+ .overlay{
+             /*	position: absolute;*/
+	            min-height: 100%;
+	            min-width: 100%;
+	            left: 0;
+	            top: 0;
+	            background: rgba(244, 244, 244, 0.79) ;
+                 }   
+
+/* Card  above description Code Below*/
+.abc .container-fluid{
+    position: relative;
+    top: 60px;
+  /*  background-color: aqua;*/
+
+}
+.best{
+   /* position: absolute;*/
+    top: 20px;
+    text-align: center;
+}
+.abc p{
+
+    text-align: center;
+}
+ /*   
+.abc .text{
+    width: 50%;
+    position: absolute;
+    left: 390px;
+    top: 80px;
+}*/
+
+
+/* card image code below*/
+
+
+.blog{
+        margin: 4em 0;
+	     position: relative;	
+         top: 70px;
+              } 
+
+    .blog .card{
+	      box-shadow: 0 0 20px #ccc;  /* explain this */
+             } 
+
+    .blog .card img{
+	       width: 100%;
+	       height: 12em;
+             }
+
+.blog button{
+    background: steelblue;
+
+}
+
+
+.card-link{
+    color: whitesmoke;
+}
+.card-body{
+
+    background-color: orange;
+}
+    
+   
+
+/*Enhanced geatures style below*/
+
+.pqr{
+
+    position: relative;
+    top: 70px;
+    
+}
+
+.pqr .row{
+    position: relative;
+    top: 30px;
+}
+/*
+.pqr .text2{
+    
+    width: 70%
+    position: absolute;
+    left: 390px;
+    top: 80px;
+}*/
+
+/* enhanced features images style below*/
+
+.pqr .card img{
+	       width: 100%;
+	       height: 12em;
+             }
+.pqr p {
+
+text-align: center;
+}
+
+/* contact styling below*/  /*there are some issues related to positioning*/
+
+   .contact{
+            position: relative;
+            
+            top: 80px;
+           }
+
+   .contact h1,h5{
+              text-align: center;
+                }
+
+   .contact .right{
+    
+	max-width: 1000px;
+   /* position: relative;*/
+    /*  left:259px;*/
+      top: 50px;
+    
+   }
+
+   .contact .form-group textarea{
+
+       height: 300px;
+   }
+
+   /* footer styles below*/
+
+   .footer{
+
+       background-color: blueviolet;
+       height: 100px;
+       position: relative;
+       top: 200px;
+   }
+
+/* footer styling below*/
+.footer .adjust{
+
+    position: relative;
+    top: 70px;
+}
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+      
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+              </button> 
+
+
+               <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-4">
+
+                                    <li class="nav-item">
+                                    <a class="nav-link" data-value="about" href="#">Home</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                    <a class="nav-link " data-value="portfolio" href="#">About</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                    <a class="nav-link " data-value="blog" href="#">Blog</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                    <a class="nav-link " data-value="team" href="#">
+                                    Dropdown</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                    <a class="nav-link " data-value="contact" href="#">Contact</a>
+                                    </li>
+
+
+                    </ul>
+              </div>
+</nav>
+
+
+<!--Image below navbar-->
+
+<header class="header">
+
+        <div class="overlay"></div>
+
+        <div class="container-fluid">
+
+            <h6>XCEEDANCE</h6>
+            <h1>Boostrap 4 Project For XCEEDANCE</h1>
+            <h4>Want To Learn Boostrap?</h4>
+        
+        </div>
+</header>  
+
+
+<!---Cards  above description code below-->
+<div class="abc">
+        
+    <div class="container-fluid">
+
+                   <div class="best">
+                       <h1> About Boostrap 4 Alpha</h1>
+                   </div>
+   
+                   <div class="col-md-12 col-lg-12 col-sm-12 text">
+      
+                    <p>
+
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt<br> ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi<br> ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla<br> pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              
+                   </p>
+
+                  </div>
+
+      </div>
+
+</div>
+
+<!--card display code below-->
+
+<div class="blog" id="blog">
+
+        <div class="container">
+     
+                     
+     
+                            <div class="row">
+
+                                <div class="col-md-3 col-lg-3 col-sm-12">
+                                <div class="card">
+
+                                     <div class="card-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINbzswn3PM2ZSRPR1OW0rAuRyf1mKyxpwKGTwaudgXch3WZjd" class="img-fluid">
+                                     </div>
+     
+                                         <div class="card-body"> 
+
+                                            <h4 class="card-title">This Is Card #1</h4>
+
+                                             <p class="card-text">
+                                               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                             </p>
+                                        
+
+     
+                                      
+                                   
+                                                <button class="btn btn-outline-secondary btn-md">    <a href="#" class="card-link">Read more</a></button>
+                                 
+                                       
+
+                                       </div>
+                                </div>
+     
+                         </div>
+
+
+     
+                                    <div class="col-md-3 col-lg-3 col-sm-12">
+
+                                           <div class="card">
+                                 
+                                                   <div class="card-img">
+                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINbzswn3PM2ZSRPR1OW0rAuRyf1mKyxpwKGTwaudgXch3WZjd" class="img-fluid">
+                                                   </div>
+     
+
+                                                     <div class="card-body">
+                                                           <h4 class="card-title">This Is Card #2</h4>
+                                                         
+                                                              <p class="card-text">
+     
+                                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                              </p>
+                                                     
+
+                                                    
+                                                            <button class="btn btn-outline-secondary btn-md"><a href="" class="card-link">Read more</a></button>
+                                                </div>     
+                                          </div>
+                                  </div>
+
+
+                                  <div class="col-md-3 col-lg-3 col-sm-12">
+     
+                                               <div class="card">
+
+                                                   <div class="card-img">
+                                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINbzswn3PM2ZSRPR1OW0rAuRyf1mKyxpwKGTwaudgXch3WZjd" class="img-fluid">
+                                                   </div>
+     
+                                                    <div class="card-body">
+    
+                                                         <h4 class="card-title">This Is Card #3</h4>
+                                                           
+                                                            <p class="card-text">
+     
+                                                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            </p>
+                                                   
+
+                                                       
+                                                                <button class="btn btn-outline-secondary btn-md"><a href="" class="card-link">Read more</a></button>
+                                                      </div>                                                   
+    
+                                                </div> 
+                                  </div>
+
+
+                                  <div class="col-md-3 col-lg-3 col-sm-12">
+     
+                                        <div class="card">
+
+                                            <div class="card-img">
+                                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINbzswn3PM2ZSRPR1OW0rAuRyf1mKyxpwKGTwaudgXch3WZjd" class="img-fluid">
+                                            </div>
+
+                                             <div class="card-body">
+
+                                                  <h4 class="card-title">This Is Card #4</h4>
+                                                    
+                                                     <p class="card-text">
+
+                                                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                     </p>
+                                             
+
+                                                
+                                                        <button class="btn btn-outline-secondary btn-md"><a href="" class="card-link">Read more</a></button>
+                                               
+                                            </div>
+
+                                         </div> 
+
+                           </div>
+
+                        
+    
+                             </div>
+    
+                       </div>
+
+                 </div>
+
+
+<!--Enhanced Feature code below-->
+
+
+<div class="pqr">
+        
+    <div class="container">
+
+                   <div class="best">
+                       <h1> About Boostrap 4 Alpha</h1>
+                   </div>
+   
+                   <div class="col-md-12 col-lg-12 col-sm-12 lll  text2">
+      
+                    <p>
+
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore<br> et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br> commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat<br> nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              
+                   </p>
+
+                  </div>
+<!--huge changes below with applied images of enhanced section -->
+
+             <div class="row">
+
+                  <div class="col-md-6 col-lg-6 col-sm-12">
+
+                           <div class="card">
+
+                                <div class="card-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINbzswn3PM2ZSRPR1OW0rAuRyf1mKyxpwKGTwaudgXch3WZjd" class="img-fluid">
+                                </div>
+  
+                            </div>
+                  </div>
+ 
+                   <div class="col-md-6 col-lg-6 col-sm-12">
+               
+                        <div class="card">
+
+                                <div class="card-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINbzswn3PM2ZSRPR1OW0rAuRyf1mKyxpwKGTwaudgXch3WZjd" class="img-fluid">
+                                </div>
+                       </div>
+                 
+                  </div>
+
+
+            </div>
+
+</div>
+
+
+
+<!--contact us code below-->
+
+<div class="contact">
+
+      <h1>Contact Us</h1>
+        <h5>Feel Free To Reach Out For Questions</h5>
+          <form>
+        
+        <div class="container-fluid">
+                <div class="col-lg-12 col-md-12 col-sm-4 right">
+
+
+                                  <div class="form-group">
+      
+                                      <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                            
+                                  </div>
+                           
+                                  <div class="form-group">
+
+                                        <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+   
+                                  </div>
+
+            
+                                  <div class="form-group">
+                                      
+                                       <textarea class="form-control form-control-lg"> </textarea>
+ 
+                                 </div>
+
+                         
+                                 <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+
+                  
+                 </div>
+              
+                </div> 
+
+        </form>
+</div>
+<footer class="footer">
+
+                      <div class="adjust">
+                                  <h6> 2018-XCEEDANCE TRAINING AND PROJECT </h6>
+                      </div>
+</footer>
+
+</body>
+</html>
