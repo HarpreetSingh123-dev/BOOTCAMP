@@ -1,0 +1,23 @@
+.detail{
+
+    border: 1px solid black;
+}
+
+.img{
+
+width: 250px;
+height: 200px;
+padding-left: 45px;
+padding-top: 10px;
+padding-right: 10px;
+
+}
+
+.width{
+    
+    position: relative;
+    width: 18rem;
+    border: 1px solid black;
+    left: 100px;
+    
+}
