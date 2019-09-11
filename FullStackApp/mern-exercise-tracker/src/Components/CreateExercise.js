@@ -18,7 +18,7 @@ constructor(props){
       username:'',
       description:'',
       duration:0,
-      date:new Date,
+      date:new Date(),
       users:[]
     }
 }
@@ -87,9 +87,10 @@ return(
           <form onSubmit={this.onSubmit}>
             <div className="form-group">
               <label>Username :</label>
+              
                  <select ref="userInput"
                     required
-                     className="from-control"
+                     className="form-control"
                        value={this.state.username}
                         onChange={this.onChangeUsername}>
                         {
@@ -104,8 +105,9 @@ return(
                            
                         }
 
-                       
+                      
                    </select>
+                   
             </div>            
         
         <div className="form-group">

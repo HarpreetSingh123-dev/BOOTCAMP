@@ -25,9 +25,9 @@ return(
       <li className="nav-item">
       <Link to='/user'  className="nav-link">Create User</Link>
       </li>
-      <li className="nav-item">
+     <li className="nav-item">
       <Link to='/all'  className="nav-link">All Clients</Link>
-      </li>
+     </li>
    
    </ul>
   </div>

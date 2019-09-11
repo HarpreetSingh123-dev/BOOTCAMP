@@ -90,9 +90,13 @@ class EditExercise extends Component{
               }
                console.log(exercise)
        
-                axios.post('http://localhost:5000/Exercises/update'+this.props.match.params.id, exercise)
+                axios.post('http://localhost:5000/Exercises/update/'+this.props.match.params.id, exercise)
                   .then(res => console.log(res.data))
+                   .catch(err=>{
                    
+                     console.log(err)
+
+                   })
                window.location='/';
 
             }
@@ -107,7 +111,7 @@ return(
               <label>Username :</label>
                  <select ref="userInput"
                     required
-                     className="from-control"
+                     className="form-control"
                        value={this.state.username}
                         onChange={this.onChangeUsername}>
                         {

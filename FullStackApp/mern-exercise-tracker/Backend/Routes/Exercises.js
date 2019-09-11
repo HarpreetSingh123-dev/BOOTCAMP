@@ -47,12 +47,12 @@ let Exercise = require('../Models/exercise.model')
 
             Exercise.findByIdAndDelete(req.params.id) // 
             
-               .then( () => res.json('Exercise Deleted')) // we will return exercises in JSON
+               .then( () => res.json('Exercise Deleted Bro')) // we will return exercises in JSON
                .catch( (err) => res.status(400).json('Error : ' +err));
             
             })
 
-    router.route('/update/:id').post((req,res)=>{ // our fourth  routeendpoint
+    router.route('/update/:id').post((req,res)=>{ // our fourth  route endpoint
 
             Exercise.findById(req.params.id) // 
                 

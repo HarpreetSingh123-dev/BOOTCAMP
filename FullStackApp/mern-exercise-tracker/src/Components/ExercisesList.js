@@ -12,7 +12,7 @@ const Exercise =(props)=>(
         <td>{props.exercise.date.substring(0,10)}</td>
 
         <td>
-            <Link to ={'/edit/'+props.exercise._id}> EDIT </Link> | <a href="#" onClick={()=>{props.deleteExercise(props.exercise._id)}}>DELETE</a>
+            <Link to ={'/edit/'+ props.exercise._id}> EDIT </Link> | <button  onClick={()=>{props.deleteExercise(props.exercise._id)}}>DELETE EXERCISE</button>
          {/*   Tis is a route link to new component*/ }
         </td>
 
@@ -46,13 +46,27 @@ class ExercisesList extends Component{
         })
   }
 
+ // shouldComponentUpdate(){
+
+
+   // return true;
+  //}
+
+  //componentWillUpdate(){
+
+    //console.log("update component")
+  //}
+
+                                                                                               
+
   deleteExercise(id){
 
     axios.delete('http://localhost:5000/Exercises/'+id)
       .then((res)=> console.log(res.data))
-    
+       
+       
     this.setState({
-        exercises: this.state.exercises.filter((el)=>el._id !== id)  //"_id" is id in mongo db database 
+        exercises: this.state.exercises.filter(   (el)  =>  el._id !==  id)  //"_id" is id in mongo db database 
     })  
    }
 
