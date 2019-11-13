@@ -1,0 +1,82 @@
+
+.signup-form{
+
+ background-color: #F5F5F5;  
+ position: relative; 
+ height: 100%;
+}
+
+
+.Form-border-sign{
+
+    border: 2px solid white;
+    position: relative;
+    background-color:gainsboro;
+    width: 650px;
+    height: 500px;
+    top: 40px;
+    box-shadow: 4px 4px 4px 4px grey;
+}
+/*    
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.container-fluid{
+   position: relative;
+   background-color: bisque;
+  
+   
+}*/
+
+.flex-sign{
+
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form .container-fluid{
+   height: 100%;
+}
+.inpt-signup .form-control{
+    width: 500px;
+}
+
+.setting-signup{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+.submit-btn-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-setting-sign{
+    position: relative;
+    top: 14px;
+}
+
+@media(max-width:500px){
+
+.Form-border-sign{
+
+    width:500px;
+
+}
+
+.inpt-signup .form-control{
+    width: 400px;
+}
+
+
+}

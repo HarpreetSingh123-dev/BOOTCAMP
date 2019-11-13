@@ -1,0 +1,69 @@
+.Main-Body-Three .row img{
+
+width: 100%;
+
+
+}
+
+.Main-Body-Three .row img:hover{
+
+   
+    transform:scale(1.09,1.09);
+    transition: transform 0.7s;
+    box-shadow: 1px 1px 1px 1px grey;
+    cursor: pointer;
+    border: 1px solid black
+    
+    }
+
+.Main-Body-Three .row h3{
+
+    position: relative;
+    top: -100px;
+    color: white;
+    left: auto;
+}
+
+.Main-Body-Three .row h3:hover{
+
+    transform:scale(1.2,1.2);
+    transition: transform 0.7s;
+   
+    cursor: pointer;
+}
+.Main-Body-Three{
+
+    position: relative;
+}
+
+@media(min-width:500px) and (max-width:767px){
+
+    
+    .Main-Body-Three{
+
+        position: relative;
+        top: 300px;
+    }
+
+
+}
+
+@media(min-width:500px) and (max-width:575px){
+
+    .Main-Body-Three .row img:hover{
+
+   
+        transform:scale(1.029,1.029);
+        transition: transform 0.7s;
+       
+        cursor: pointer;
+        
+        }
+    
+
+       
+
+
+}
+
+

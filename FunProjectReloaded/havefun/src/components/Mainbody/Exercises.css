@@ -1,0 +1,291 @@
+*{
+font-family: 'Exo 2', sans-serif;
+}
+
+ 
+
+
+.nav-decoration{
+
+    height: 80px;
+    background-color: orange;
+    width: 100%;
+}
+
+.nav-decoration .Glyp-set{
+
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
+    top: 13px;
+}
+
+.Glyp-set span{
+
+    width: 110px;
+}
+
+.Glyp-set span:hover{
+
+   
+    transform:scale(1.2,1.2);
+transition: transform 0.4s;
+box-shadow: 1px 1px 1px 1px grey;
+border: 1px  solid grey;
+}
+
+.container h2 {
+    position: relative;
+    top: 60px;
+}
+
+.exercise-set .container-fluid{
+background-color: #F5F5F5;
+
+}
+/*
+
+.row h3{
+
+    color: black
+}*/
+
+
+
+
+.first-portion-adjust {
+    
+    background-color:#F5F5F5;
+    height: 350px;
+}
+
+.first-portion-img-adjust{
+    position: relative;
+    top: 110px;
+}
+
+/*
+.first-portion-adjust img{
+height: 100%;
+width: 100%;
+}*/
+
+.first-portion-text{
+    position: relative;
+    top: 80px;
+
+}
+
+.second-portion-adjust{
+
+
+    position: relative;
+    top: 135px;
+}
+
+.second-portion-img1 img{
+
+height: 100%;
+width: 100%
+
+}
+
+.second-portion-img2 {
+
+    position: relative;
+    top: 40px;
+}
+
+.second-portion-text3{
+
+
+    position: relative;
+    top: 15px;
+}
+
+.second-portion-img3{
+
+    position: relative;
+    top: 40px;
+}
+
+.second-portion-text4{
+
+    position: relative;
+    top: 30px;
+}
+
+.second-portion-text4 ul {
+
+    position: relative;
+    top: 20px;
+}
+
+.second-portion-text4 ul li{
+
+    position: relative;
+    left: -15px;
+    margin: 10px;
+    
+}
+
+.second-portion-img4{
+
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+
+.second-portion-text5{
+
+    position: relative;
+    top: 60px;
+}
+
+.text-5-images{
+
+    position: relative;
+    top: 25px;
+} 
+
+.second-portion-text6{
+
+    position: relative;
+    top: 120px;
+    left: -20px;
+}
+
+.second-portion-text6 ul li{
+
+    margin: 12px;
+}
+
+.you-tube-adjust{
+
+    position: relative;
+    top: 130px;
+    
+
+}
+.you-tube-set{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+.last-portion{
+
+    position: relative;
+    top: 150px;
+    
+}
+
+
+.last-portion-text1 p {
+
+    margin: 12px;
+}
+
+.last-portion-text2{
+
+    position: relative;
+    top: 30px
+}
+
+.last-portion-text2 ol li{
+
+    position: relative;
+    margin: 15px;
+}
+
+.last-portion-text2-sub{
+
+    position: relative;
+    top: 30px;
+    left: -24px;
+}
+
+.final-button{
+
+
+    position: relative;
+    top: 100px;
+    left: 30px;
+
+}
+
+.final-button button:hover{
+    transform:scale(1.2,1.2);
+transition: transform 0.7s;
+box-shadow: 1px 1px 1px 1px grey;
+
+}
+
+
+.share{
+
+position: relative;
+left: 150px;
+
+}
+
+
+
+@media (min-width:500px) and (max-width:998px){
+
+.text-5-images .row .col-sm-12{
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+}
+
+@media (min-width:500px) and (max-width:765px){
+
+    .share{
+
+        position: relative;
+        left: 10px;
+        top: 260px;
+        
+        }
+
+}
+
+@media (min-width:500px) and (max-width:764px){
+
+.final-button {
+     left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+}
+
+
+.exercise-footer{
+
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+   
+    position: relative;
+    top: 415px;
+}
+
+.exercise-footer-content{
+
+    position: relative;
+    top: 30px;
+}
+
+.exercise-footer-content img{
+
+    border: 4px solid orange;
+}

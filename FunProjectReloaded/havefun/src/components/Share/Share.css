@@ -1,0 +1,14 @@
+.Share-Buttons-setting{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Share-Buttons-setting :hover{
+
+    transform:scale(1.099,1.099);
+    transition: transform 0.5s;
+    box-shadow: 2px 2px 2px 2px grey;
+
+}

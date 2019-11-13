@@ -1,0 +1,64 @@
+.img-set img{
+
+    width: 100%;
+    height: 510px;
+}
+
+@media (max-width:500px){
+
+
+.img-set img{
+        width: 100%;
+        height: 400px;
+        
+    }
+
+
+
+}
+.img-set img{
+
+    opacity: 10;
+
+    
+}
+
+.Image-Overlay{
+    top: 180px;
+    position:absolute;
+    color: white;
+}
+
+.Image-Overlay h1{
+
+    color: floralwhite;
+    font-weight: bolder;
+   
+    
+}
+
+.nnn{
+    position: relative;
+}
+
+.ll{
+
+    display: flex;
+    justify-content: center
+}
+
+.nnn h1{
+
+    font-size: 68px;
+}
+
+@media(max-width:500px){
+
+
+.Image-Overlay h1{
+
+    position: relative;
+    top: -70px;
+}
+
+}

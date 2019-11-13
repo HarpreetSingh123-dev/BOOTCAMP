@@ -1,0 +1,63 @@
+.set .nav-item .nav-link:hover{
+    border-bottom: 3px solid orange;
+   font-size: 22px;
+   font-weight: 450;
+   }
+
+.set .nav-link{
+
+    color: white;
+}
+.set{
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 18px;
+    
+}
+
+.adjust{
+
+    margin-left: 80px;
+}
+
+
+.icon{
+
+    margin-left: 10px;
+
+}
+.imgg{
+
+    z-index: 0;
+}
+
+.icon img{
+
+    width: 70px;
+    height: 85px;
+
+}
+
+.nav-item {
+
+    color: white;
+}
+
+
+
+@media (min-width:500px) and (max-width:650px){
+
+    .icon img{
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+
+/*.navbar-expand-lg{
+
+    background-color: b
+}*/

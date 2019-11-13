@@ -1,0 +1,61 @@
+.login-form{
+
+    background-color: #F5F5F5; 
+    position: relative;
+    height: 100%;
+}
+
+.container-fluid{
+    position: relative;
+    top: 30px;
+    }
+
+.flex-login{
+     display: flex;
+     justify-content: center;
+     
+    }
+
+.Form-border{
+
+    border: 2px solid white;
+    
+    position: relative;
+    background-color:gainsboro;
+    width: 550px;
+    height: 350px;
+    top: 40px;
+    box-shadow: 4px 4px 4px 4px grey;
+    
+}
+
+.inpt-login .form-control{
+   width: 400px;
+}
+
+.setting-login{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-check-login{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+
+
+
+.form-setting-login{
+
+    position: relative;
+    top: 14px;
+    font-family: fantasy;
+}
