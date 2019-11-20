@@ -3,6 +3,14 @@ import {Link} from 'react-router-dom'
 import './Exercises.css'
 import Share from '../Share/Share'
 import YouTube from '../YouTube/Youtube'
+import image1 from '../../Images-Set/wb0198_gymtimidation_graphics_blog-image.jpg'
+import image2 from '../../Images-Set/wb0198_gymtimidation_graphics_scary.jpg'
+import image3 from '../../Images-Set/injection.jpg'
+import image4 from '../../Images-Set/wb0198_gymtimidation_graphics_spider.jpg'
+import image5 from '../../Images-Set/wb0198_gymtimidation_graphics_intimidating-1.jpg'
+import image6 from '../../Images-Set/rebekah-case-study-3-setting-up-treadmill.jpg'
+import image7 from '../../Images-Set/roxy-case-study-2-freeweights-2.jpg'
+import image8 from '../../Images-Set/robin-case-study-3-leg-extension-machine.jpg'
 class Exercises extends Component {
     
    homeHandler(){
@@ -46,7 +54,7 @@ class Exercises extends Component {
                       </div>
                    
                       <div className="first-portion-img-adjust">
-                          <img src="https://ne-media-cdn.puregym.com/media/800916/wb0198_gymtimidation_graphics_blog-image.jpg?quality=80&mode=pad&width=970"></img>
+                          <img src={image1}></img>
                       </div>
                 </div>
             </div>
@@ -68,7 +76,7 @@ class Exercises extends Component {
                             </div>
                      
                            <div className="second-portion-img1">
-                               <img src="https://ne-media-cdn.puregym.com/media/800920/wb0198_gymtimidation_graphics_scary.jpg?mode=pad&width=0"></img>   
+                               <img src={image2}></img>   
                            </div>
                      
                            <div className="second-portion-text2"> 
@@ -83,7 +91,7 @@ class Exercises extends Component {
                            </div>
                      
                            <div className="second-portion-img2">
-                               <img src="https://ne-media-cdn.puregym.com/media/800922/wb0198_gymtimidation_graphics_spider.jpg?mode=pad&width=0"></img>
+                               <img src={image3}></img>
                            </div>
                        
                            <div className="second-portion-text3">
@@ -95,7 +103,7 @@ class Exercises extends Component {
                           </div>
                       
                           <div className="second-portion-img3">
-                              <img src="https://ne-media-cdn.puregym.com/media/800917/wb0198_gymtimidation_graphics_injection.jpg?mode=pad&width=0"></img>
+                              <img src={image4}></img>
                           </div>
 
                           <div className="second-portion-text4">
@@ -133,7 +141,7 @@ class Exercises extends Component {
                           </div>   
 
                           <div className="second-portion-img4">
-                             <img src="https://ne-media-cdn.puregym.com/media/800926/wb0198_gymtimidation_graphics_intimidating-1.jpg?mode=pad&width=0"></img>
+                             <img src={image5}></img>
                           </div>
                           <div className="second-portion-text5">
                           
@@ -155,19 +163,19 @@ class Exercises extends Component {
 
                                  
                                  <div className="col-lg-4 col-sm-12"> 
-                                 <img src="https://ne-media-cdn.puregym.com/media/800929/rebekah-case-study-3-setting-up-treadmill.jpg?mode=pad&width=0"></img>
+                                 <img src={image6}></img>
                                  </div>
                                 
 
                                  
                                  <div className="col-lg-4 col=sm-12">
-                                 <img src="https://ne-media-cdn.puregym.com/media/800928/roxy-case-study-2-freeweights-2.jpg?mode=pad&width=0"></img>
+                                 <img src={image7}></img>
                                  </div>
                                  
 
                                  
                                  <div className="col-lg-4 col-sm-12">
-                                 <img src="https://ne-media-cdn.puregym.com/media/800930/robin-case-study-3-leg-extension-machine.jpg?mode=pad&width=0"></img>
+                                 <img src={image8}></img>
                                  </div>
                                  
 

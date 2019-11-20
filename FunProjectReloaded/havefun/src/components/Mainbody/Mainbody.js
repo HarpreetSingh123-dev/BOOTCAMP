@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Mainbody.css'
 import {Link, NavLink} from 'react-router-dom'
-
+import image1 from "../../Images-Set/wb0198_gymtimidation_graphics_blog-image.jpg"
 class Mainbody extends Component {
 
 constructor (props){
@@ -69,7 +69,7 @@ constructor (props){
               <div className="Row-Adjust">
                <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12">
-                  <img src="https://ne-media-cdn.puregym.com/media/800916/wb0198_gymtimidation_graphics_blog-image.jpg?quality=80&mode=pad&width=970"></img>
+                  <img src={image1}></img>
 
                  </div>
                

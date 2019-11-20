@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './HeaderImage.css'
-
+import image1 from '../../Images-Set/victor-freitas-iGZiWuEg824-unsplash.jpg'
 class HeaderImage extends Component {
 render() {
 return (
@@ -18,7 +18,7 @@ return (
          </div>
 
         <div class="img-set">
-              <img src="https://images.wallpaperscraft.com/image/gym_disks_weight_bodybuilding_118105_1920x1080.jpg"/>
+              <img src={image1}/>
         </div>
 
         </div>

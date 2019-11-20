@@ -1,48 +1,133 @@
 .Main-Body-Three .row img{
 
 width: 100%;
+border: 2px solid grey;
 
 
 }
 
-.Main-Body-Three .row img:hover{
+.Main-Body-Three{
+    background-color:  #F5F5F5;
+}
+.Main-Body-Three hr{
+    border: 0;
+    height: 2px;
+    width: 70%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.Main-Body-Three .y:hover.y img{
+    transform:scale(1.07,1.07);
+    transition: transform ease 0.7s;
+}
+/*
+.Main-Body-Three  img:hover{
 
    
     transform:scale(1.09,1.09);
-    transition: transform 0.7s;
+    transition: transform ease 0.7s;
     box-shadow: 1px 1px 1px 1px grey;
     cursor: pointer;
-    border: 1px solid black
+    border: 1px solid black;
     
-    }
+  
+    
+    }*/
 
-.Main-Body-Three .row h3{
+  .Main-Body-Three h5{
+      color: white;
+  }  
+ .Main-Body-Three .h{
 
     position: relative;
     top: -100px;
     color: white;
-    left: auto;
+    opacity: 0;
 }
 
-.Main-Body-Three .row h3:hover{
+/*some cool stuff below*/
+.Main-Body-Three .y:hover .h {
+    opacity: 1;
+    transition: opacity ease-out 250ms;
+}
 
-    transform:scale(1.2,1.2);
-    transition: transform 0.7s;
+
+
+.Main-Body-Three .row h5:hover{
+
+    transform:scale(1.07,1.07);
+    transition: transform ease-out 0.7s;
    
     cursor: pointer;
 }
 .Main-Body-Three{
 
     position: relative;
+    top: 0px;
 }
 
-@media(min-width:500px) and (max-width:767px){
+.y{
+    position: relative;
+    z-index: +8;
+}
+
+.y::before{
+
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 4.25em;
+    left: 1.25em;
+    right: 1.25em;
+   
+    transform: scale(0,1);  
+    transition: transform ease-out 250ms;
+}
+
+.y:hover::before{
+    z-index: +8;
+transform: scale(1.05,1);
+border-top: 1.5px solid white;
+border-bottom: 1.5px solid white;
+
+}
+
+.Main-Body-Three .link{
+    text-decoration: none;
+}
+
+.y::after{
+
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 4.25em;
+    left: 1.25em;
+    right: 1.25em;
+   
+    transform: scale(1,0);  
+    transition: transform ease-out 250ms;
+}
+
+.y:hover::after{
+    transform: scale(1,1.05);
+    border-left: 1.5px solid white;
+    border-right: 1.5px solid white;
+
+}
+.Main-Body-Three .row{
+
+position: relative;
+top: 80px;
+}
+
+@media(min-width:500px) and (max-width:599px){
 
     
     .Main-Body-Three{
 
         position: relative;
-        top: 300px;
+        top: 320px;
     }
 
 
@@ -66,4 +151,33 @@ width: 100%;
 
 }
 
+@media(min-width:600px) and (max-width:767px){
+
+    .Main-Body-Three{
+
+        position: relative;
+        top: 360px;
+    }
+
+}
+
+@media(min-width:765px) and (max-width:964px){
+
+    .Main-Body-Three{
+
+        position: relative;
+        top: 110px;
+    }
+
+}
+
+@media(min-width:500px) and (max-width:575px){
+
+    .Main-Body-Three img{
+
+        margin-top: 20px;
+        height: 450px;
+    }
+
+}
 

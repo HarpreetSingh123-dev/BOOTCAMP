@@ -1,0 +1,183 @@
+.nav-endoctrine{
+
+    
+ width: 100%;
+ height: 80px;
+ background-color: orange;   
+}
+
+.nav-endoctrine-below{
+
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #F5F5F5;
+    top: 60px;
+
+}
+
+.first-portion-endoctrine{
+
+    position: relative;
+    top: -290px
+}
+.first-portion-endoctrine .row{
+    position: relative;
+    top: 30px;
+}
+
+.first-portion-endoctrine .row img{
+    box-shadow: 1px 1px 2px 2px;
+    width: 100%;
+}
+
+.second-portion-endoctrine{
+
+    position: relative;
+    top: -200px;
+}
+
+.second-portion-endoctrine .second-portion-part-two img{
+
+    box-shadow: 1px 1px 2px 2px;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+
+.second-portion-endoctrine .second-portion-part-two p{
+   margin-top: 25px;
+}
+.second-portion-endoctrine .second-portion-part-two li{
+    margin-top: 10px;
+}
+
+.second-portion-endoctrine .second-portion-part-three{
+
+    position: relative;
+    top: 25px;
+}
+
+.second-portion-endoctrine .second-portion-part-three img{
+
+    position: relative;
+    box-shadow: 1px 1px 2px 2px;
+    top: 20px;
+    width: 100%;
+    height: 500px;
+}
+
+.second-portion-endoctrine .second-portion-part-three p{
+    margin-top: 20px;
+}
+
+.second-portion-endoctrine .second-portion-part-three ul {
+    position: relative;
+    top: 15px;
+}
+
+
+.second-portion-endoctrine .second-portion-part-three ul li{
+    margin-top: 20px;
+}
+
+.second-portion-endoctrine .second-portion-part-four{
+    position: relative;
+    top: 50px;
+}
+/*
+.second-portion-endoctrine .second-portion-part-three ul,li,h2{
+   position: relative;
+   top: 20px;
+
+}*/
+
+.second-portion-endoctrine .second-portion-part-five{
+    position: relative;
+    top: 75px;
+}
+
+.second-portion-endoctrine .second-portion-part-five p{
+margin-top: 20px;
+}
+.second-portion-endoctrine .second-portion-part-five img{
+
+    width: 100%;
+    height: 400px;
+    box-shadow: 1px 1px 2px 2px;
+    position: relative;
+    top: 15px;
+}
+
+.second-portion-endoctrine .second-portion-part-six{
+    position:  relative;
+    top: 95px;
+}
+
+.second-portion-endoctrine .second-portion-part-six p {
+
+    margin-top: 20px;
+}
+.second-portion-endoctrine .second-portion-part-six img{
+width: 100%;
+box-shadow: 1px 1px 2px 2px;
+position: relative;
+top: 17px;
+
+}
+
+.second-portion-endoctrine .second-portion-part-seven {
+    position: relative;
+    top: 120px;
+}
+.second-portion-endoctrine .second-portion-part-seven p{
+    margin-top: 20px;
+}
+.second-portion-endoctrine .second-portion-part-seven img{
+    width: 100%;
+    height: 400px;
+    box-shadow: 1px 1px 2px 2px;
+    position: relative;
+    top: 15px;
+}
+
+.second-portion-endoctrine .second-portion-part-eight{
+    position: relative;
+    top: 150px;
+}
+.second-portion-endoctrine .second-portion-part-eight p{
+    margin-top: 15px;
+}
+.second-portion-endoctrine .second-portion-part-eight img{
+   width: 100%;
+   box-shadow: 1px 1px 2px 2px;
+   position: relative;
+   top: 15px;
+}
+
+.second-portion-endoctrine .second-portion-part-nine{
+
+    position: relative;
+    top: 185px;
+}
+.second-portion-endoctrine .second-portion-part-nine p{
+    margin-top: 15px;
+}
+
+.second-portion-endoctrine .second-portion-part-nine img{
+    width: 90%;
+    position: relative;
+    top: 15px;
+    height: 380px;
+    box-shadow: 1px 1px 2px 2px;
+}
+.second-portion-endoctrine .second-portion-part-ten{
+    position: relative;
+    top: 220px;
+}
+
+.second-portion-endoctrine .second-portion-part-eleven{
+    position: relative;
+    top: 250px;
+}

@@ -1,5 +1,6 @@
 *{
 font-family: 'Exo 2', sans-serif;
+
 }
 
  
@@ -34,7 +35,7 @@ box-shadow: 1px 1px 1px 1px grey;
 border: 1px  solid grey;
 }
 
-.container h2 {
+.first-portion-adjust .container h2 {
     position: relative;
     top: 60px;
 }
@@ -220,7 +221,7 @@ width: 100%
     transform:scale(1.2,1.2);
 transition: transform 0.7s;
 box-shadow: 1px 1px 1px 1px grey;
-
+color: black;
 }
 
 
