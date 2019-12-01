@@ -1,0 +1,88 @@
+.MainBody4-Set{
+    position: relative;
+    top: 50px;
+    background-color: #F5F5F5;
+}
+
+.MainBody4-Set .Main-Body-Inner{
+    position: relative;
+    top:50px;
+}
+.MainBody4-Set hr{
+       
+    border: 0;
+    height: 2px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.MainBody4-Set img{
+     width: 100%;
+     height: 21rem;
+     
+}
+
+.MainBody4-Set .z{
+    margin-top: 20px;
+}
+
+.MainBody4-Set .z{
+    overflow: hidden;
+    position: relative;
+
+}    
+
+
+.MainBody4-Set .z img{
+   transition: transform ease-in-out 0.5s;
+  
+}
+
+.MainBody4-Set .z:hover img{
+    
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+
+.z::before{
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 4.25em;
+    left: 1.25em;
+    right: 1.25em;
+  
+    transform: scale(0,1);  
+    transition: transform ease-out 250ms;
+   
+}
+
+
+.z:hover::before{
+
+    z-index: +8;
+    transform: scale(1.05,1);
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+}
+
+.Main-Body-Inner{
+position: relative;
+}
+
+
+.z::after{
+
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 4.25em;
+    left: 1.25em;
+    right: 1.25em;
+  
+    transform: scale(1,0);  
+    transition: transform ease-out 250ms;
+    
+}
+

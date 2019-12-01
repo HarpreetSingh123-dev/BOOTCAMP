@@ -1,0 +1,12 @@
+.MainPage-Decoration{
+    width:100%;
+    height: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ .modal-backdrop{
+    display: none;
+}

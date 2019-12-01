@@ -1,0 +1,24 @@
+.Products-Main .card{
+   margin-top: 25px;
+} 
+
+.Products-Main .card img{
+    position: relative;
+    width: 90%;
+    top: 15px;
+}
+
+.Products-Main .card .hg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Products-Main .Product-Button-Set{
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

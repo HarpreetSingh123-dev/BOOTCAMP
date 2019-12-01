@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import './Main.css'
+import image1 from '../../Images-Set/scott-webb-Vn39uEkX00s-unsplash.jpg'
+import image2 from '../../Images-Set/man-wearing-gray-tank-top-1423384.jpg'
+
 class Main extends Component {
     render() {
         return (
@@ -14,12 +17,44 @@ class Main extends Component {
 
                 <div className="container">
                 <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-12">
-                <Link to="/exercises-bundle1"><img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"></img></Link>
+                  
+                   <div className="col-lg-6 col-md-6 col-sm-12">
+                        <div className="box-1">
+                          <div className="img-box">
+                        <Link to="/exercises-bundle1">
+                            <img src={image1}></img>
+                        
+
+                             <div className="details">
+                              <div className="content">
+                             <h2>For Intermediate Persons</h2>
+                             <p>For persons who have been regular to gym for at least six months</p>
+                             </div>
+                             
+                             </div>
+                             </Link>
+                          </div>
+                        </div>                        
                   </div>
 
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                     <img src="https://images.pexels.com/photos/1423384/pexels-photo-1423384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+
+                   <div className="box-1">
+                   <div className="img-box">
+                   <Link>
+                     <img src={image2}></img>
+                   </Link>
+ 
+                   <div className="details">
+                              <div className="content">
+                             <h2>For Advanced Persons</h2>
+                             <p>For persons who have been regular to gym for more than a year</p>
+                             </div>
+                             
+                             </div>
+
+                    </div>
+                  </div>
                   </div>
 
 

@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar'
 import Mainbody from'./components/Mainbody/Mainbody'
-import Mainbody2 from './components/Mainbody2/Mainbody2'
 import Mainbody3 from './components/Mainbody3/Mainbody3'
 import Main from './components/Mainbody2/Main'
+import Shopping from './Shopping-Cart/Landing-Display'
+import Mainbody4 from './components/Mainbody4/Mainbody4' 
 class App extends Component {
 render() {
 return (
@@ -15,7 +16,8 @@ return (
 <Mainbody></Mainbody>
 <Mainbody3></Mainbody3>
 <Main></Main>
-
+<Shopping></Shopping>
+<Mainbody4></Mainbody4>
 
 </div>
 );
