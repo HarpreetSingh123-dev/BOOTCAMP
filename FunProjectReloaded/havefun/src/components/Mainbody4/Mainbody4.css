@@ -24,6 +24,7 @@
 
 .MainBody4-Set .z{
     margin-top: 20px;
+   
 }
 
 .MainBody4-Set .z{
@@ -32,26 +33,34 @@
 
 }    
 
+.MainBody4-Set .z:hover{
+   
+    border: 2px solid black;
+}
 
 .MainBody4-Set .z img{
    transition: transform ease-in-out 0.5s;
-  
+   
 }
 
 .MainBody4-Set .z:hover img{
     
     transform: scale(1.2);
     transition: transform 0.5s;
+    opacity: 0.6;
+    
+    filter: alpha(opacity=50);
+    
 }
 
 
 .z::before{
     content: '';
     position: absolute;
-    top: 1.25em;
-    bottom: 4.25em;
-    left: 1.25em;
-    right: 1.25em;
+    top: 2.25em;
+    bottom: 2.25em;
+    left: 2.25em;
+    right: 2.25em;
   
     transform: scale(0,1);  
     transition: transform ease-out 250ms;
@@ -63,8 +72,30 @@
 
     z-index: +8;
     transform: scale(1.05,1);
-    border-top: 1.5px solid white;
-    border-bottom: 1.5px solid white;
+    border-top: 1.7px solid black;
+    border-bottom: 1.7px solid black;
+}
+
+
+.z::after{
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 3.25em;
+    right: 3.25em;
+  
+    transform: scale(1,0);  
+    transition: transform ease-out 250ms;
+   
+}
+
+.z:hover::after{
+
+    z-index: +8;
+    transform: scale(1,1.05);
+    border-left: 1.7px solid black;
+    border-right: 1.7px solid black;
 }
 
 .Main-Body-Inner{
@@ -72,17 +103,24 @@ position: relative;
 }
 
 
-.z::after{
 
-    content: '';
+.z .content {
     position: absolute;
-    top: 1.25em;
-    bottom: 4.25em;
-    left: 1.25em;
-    right: 1.25em;
-  
-    transform: scale(1,0);  
-    transition: transform ease-out 250ms;
+    top: 45%;
+    left: 40%;
     
+   
 }
+
+.z h1{
+
+    color: orangered;
+    transition: transform ease-in-out 250ms;
+}
+.z:hover h1{
+
+    transform: scale(1.5,1.5);
+    transition: transform ease-in-out 250ms;
+}
+
 

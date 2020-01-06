@@ -17,6 +17,7 @@ import UpdateExercise from './Admin/UpdateExercises'
 // below are for shopping cart
 import ShoppingCart from './Shopping-Cart/ShoppingCart/MainPage'
 import Cart from './Shopping-Cart/ShoppingCart/Cart/userCart'
+import Checkout from './Shopping-Cart/Checkout/Checkout'
 class FinalAssembly extends Component {
     render() {
         return (
@@ -28,6 +29,7 @@ class FinalAssembly extends Component {
                 <Route exact path="/signup" component={Sign}/>
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/About" component={About}/>
+                
                 {/*Below Are MainBody Routes */}
                 <Route exact path="/exercises" component={Exercise}></Route>
                 <Route exact path="/404" component={NotFound}></Route>
@@ -41,6 +43,7 @@ class FinalAssembly extends Component {
                 <Route exact path="/updateexercises/:id" component={UpdateExercise}></Route>
                 <Route exact path="/shopping" component={ShoppingCart}></Route>
                 <Route exact path="/cart" component={Cart} ></Route>
+                <Route exact path="/Checkout" component={Checkout}></Route>
                 <Redirect path='/404'></Redirect>
                 </Switch>
             </div>

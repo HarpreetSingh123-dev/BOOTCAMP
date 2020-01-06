@@ -21,36 +21,66 @@ class Mainbody4 extends Component {
                  <div className="col-lg-6 col-md-6 col-sm-12">
                      <div className="z">   
                          <img src={image1}></img>
+                        <div className="content">
+                         
+                           <h1>Chest</h1>
+                        
+                        </div>
                       </div>   
                  </div>
                 
                  <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="z">
                       <img src={image2}></img>
+                      <div className="content">
+                         
+                           <h1>Shoulder</h1>
+                        
+                        </div>
                     </div>
                 </div>
                  
                  <div className="col-lg-6 col-md-6 col-sm-12">
                       <div className="z">
                         <img src={image3}></img>
+                        <div className="content">
+                         
+                           <h1><b>Back</b></h1>
+                        
+                        </div>
                       </div>
                  </div>
                  
                  <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="z">
                       <img src={image4}></img>
+                      <div className="content">
+                         
+                           <h1>Bicep</h1>
+                        
+                        </div>
                     </div>
                 </div>
                 
                  <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="z">
                       <img src={image5}></img>
+                      <div className="content">
+                         
+                           <h1>Legs</h1>
+                        
+                        </div>
                     </div>
                  </div>
                  
                  <div className="col-lg-6 col-md-6 col-sm-12">
                    <div className="z">
                       <img src={image6}></img>
+                      <div className="content">
+                         
+                           <h1>Tricep</h1>
+                        
+                        </div>
                   </div>
               </div>
             

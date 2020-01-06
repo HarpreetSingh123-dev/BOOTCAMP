@@ -70,6 +70,9 @@ app.use('/users', UsersRouter)
 const exerciseRouter =  require('./Routes/ExerciseRouter')
 app.use('/exercises' , exerciseRouter)
 
+const orderRouter = require('./Routes/ShoppingCustomerRouter')
+app.use('/order' , orderRouter)
+
 // setting up listening port below
 app.listen(port , ()=>{
 console.log("Gym Blog Server running on Port No"+ port )

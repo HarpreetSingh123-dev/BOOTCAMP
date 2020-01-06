@@ -67,11 +67,16 @@ top: 30px;
     left: -20px;
 }
 
+.buttontt button{
+    transition: transform 0.4s;
+}
+
 .buttontt button:hover{
 transform:scale(1.2,1.2);
-transition: transform 0.7s;
+transition: transform 0.4s;
 box-shadow: 1px 1px 1px 1px grey;
 color: black;
+
 }
 
 @media(min-width:500px) and (max-width:767px){

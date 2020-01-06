@@ -5,6 +5,7 @@ import decrementCartProduct from '../Redux/Actions/decrementCartProduct'
 import cartTotalCalculator from '../Redux/Actions/totalOfCart'
 import {bindActionCreators} from 'redux'
 import Cart from './Cart'
+import {Link} from 'react-router-dom'
 
 class userCart extends Component {
     
@@ -45,7 +46,7 @@ class userCart extends Component {
 
     else{
 
-      b =(<button >Checkout</button>)
+      b =(<Link to="/Checkout"><button >Checkout</button></Link>)
       c =(<p>Cart Total Is :{this.props.total}Rs</p>)
     }
            return (

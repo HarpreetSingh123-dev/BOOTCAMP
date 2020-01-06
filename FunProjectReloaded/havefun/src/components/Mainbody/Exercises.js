@@ -11,6 +11,9 @@ import image5 from '../../Images-Set/wb0198_gymtimidation_graphics_intimidating-
 import image6 from '../../Images-Set/rebekah-case-study-3-setting-up-treadmill.jpg'
 import image7 from '../../Images-Set/roxy-case-study-2-freeweights-2.jpg'
 import image8 from '../../Images-Set/robin-case-study-3-leg-extension-machine.jpg'
+import image9 from '../../Images-Set/shallow-focus-photography-of-smoothie-926361.jpg'
+import image10 from '../../Images-Set/valery-sysoev-LDAirERNzew-unsplash.jpg'
+import image11 from '../../Images-Set/assorted-spices-near-white-ceramic-bowls-678414.jpg'
 class Exercises extends Component {
     
    homeHandler(){
@@ -308,7 +311,7 @@ class Exercises extends Component {
                             </div>
 
                            <div className="final-button">
-                           <button type="button" class="btn btn-info" onClick={this.homeHandler.bind(this)}> BACK TO HOME</button>
+                           <button type="button" class="btn btn-primary" onClick={this.homeHandler.bind(this)}> BACK TO HOME</button>
                            </div>
 
                            
@@ -343,14 +346,14 @@ class Exercises extends Component {
              <div className="exercise-footer-content">
              
 
-             <h4>Some Other Articles</h4>
+             <h4>Some Related Articles</h4>
              
 
              <div className="row">
              
                 <div className="col-lg-4 col-md-4 col-sm-4">
                    <a href="https://www.medicalnewstoday.com/articles/263371.php#muscle_building_and_weight_loss">
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLhF2iwJkGFpBcaCD-4FyGgCQJT8CKrMN1tozt7FFwDQACRB1Gg&s"></img>
+                   <img src={image9}></img>
                    </a>
                    <h4><b>Learn About Whey Protien</b></h4>
                    
@@ -359,7 +362,7 @@ class Exercises extends Component {
              <div className="col-lg-4 col-md-4 col-sm-4">
                 
                 <a href="https://bodycarehealthclub.com.au/weight-loss-vs-fat-loss-the-difference-explained/">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNRJOx74jCQyUttCUhkBKkP5odm47zYVHxKOabUqNzTtbw5K7R2w&s"></img>
+                <img src={image10}></img>
                 </a>
                 <h4><b>Weight Loss Vs Fat Loss</b></h4>
                 
@@ -368,7 +371,7 @@ class Exercises extends Component {
              <div className="col-lg-4 col-md-4 col-sm-4">
              
               <a href="https://www.medicalnewstoday.com/articles/322827.php">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCGzz87w9zyC6aX8HKDe_4tHR6jSQB2OgoX8rjkijOY2Um57Zf&s"></img>
+              <img src={image11}></img>
               </a>
               <h4><b>Plant Protien Vs Whey Protien</b></h4>
               
