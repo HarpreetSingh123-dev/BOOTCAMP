@@ -6,7 +6,7 @@
   "dependencies": {
     "assert": "^1.4.1",
     "cookie-parser": "^1.4.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.15.6",
     "mongodb": "^3.0.10",
     "mongoose": "^5.1.7",
